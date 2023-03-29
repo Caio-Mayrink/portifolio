@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria:#F6F6F6 ;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --font-principal: "Montserrat", sans-serif;
+    --font-textos: 'Krona One', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.cabecalho{
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+.apresentacao{
+    padding: 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+.apresentacao_conteudo_titulo{
+    font-size: 2.25rem;
+    font-family: var(--font-textos);
+}
+
+.apresentacao_conteudo_paragrafo{
+    font-size: 1.5rem;
+    font-family: var(--font-principal);
+
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao_links_subtitulo{
+    font-family: var(--font-textos);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__butao{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--font-principal);
+    padding: 16px 0;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.apresentacao__butao:hover{
+    background-color: var(--cor-hover);
+    padding: 3%;
+}
+
+
+
+.rodape{
+    text-align: center;
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.joana_santos_programando{
+    width: 50%;
+}
+
+#input-text {
+    width: 500px;
+    height: 75px;
+    text-align:start;
+    text-justify: auto;
+    margin-bottom: 75px;
+    border: 2px solid #22D4FD;
+    border-radius: 10px;
+}
+
+@media (max-width: 1275px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    
+}
